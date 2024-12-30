@@ -58,6 +58,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t my-angular-app .
+          docker build -t angular-test-app .
           docker tag my-angular-app ${{ secrets.DOCKER_USERNAME }}/angular-test-app:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/angular-test-app:latest
